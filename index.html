@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoLife</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Roboto:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style/lightbox.css">
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-camera-fill orange-color me-4"></i>PhotoLife.pl</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Zespół</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#gallery" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Galeria
+                        </a>
+                        <ul class="dropdown-menu gallery-menu">
+                            <li><a class="dropdown-item" href="#gallery-wedding">Fotografia ślubna</a></li>
+                            <li><a class="dropdown-item" href="#gallery-portrait">Portrety</a></li>
+                            <li><a class="dropdown-item" href="#gallery-withChild">Z dzieckiem</a></li>
+                            <li><a class="dropdown-item" href="#gallery-moto">Motoryzacja</a></li>
+                            <li><a class="dropdown-item" href="#gallery-christmas">Święta</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <div
+            class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
+            <p class="display-1">Photolife.pl</p>
+            <p class="welcome-text mb-5">
+                <figure>
+                    <blockquote class="blockquote blockquotepl">
+                        <p> "Fotografować to znaczy wstrzymać oddech, uruchamiając wszystkie nasze
+                            zdolności w obliczu ulotnej rzeczywistości."</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer pb-4">
+                        Henri Cartier-Bresson
+                    </figcaption>
+                </figure>
+            </p>
+            <a href="#aboutus" class="btn btn-outline-light">poznaj nas</a>
+            <div class="hero-shadow"></div>
+        </div>
+    </section>
+
+    <main>
+        <section id="aboutus">
+            <div class="container py-5 aboutus-boxes">
+                <div class="row text-center">
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="aboutus-box m-3 p-4 p-lg-5 border text-dark">
+                            <h3>Jakość</h3>
+                            <i class="bi bi-check aboutus-icon"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iste!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="aboutus-box m-3 p-4 p-lg-5 border text-light bg-dark">
+                            <h3>Klienci</h3>
+                            <i class="bi bi-people-fill aboutus-icon"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iste!</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="aboutus-box m-3 p-4 p-lg-5 border text-dark">
+                            <h3>Sprzęt</h3>
+                            <i class="bi bi-hdd-stack-fill aboutus-icon"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iste!</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="aboutus-box m-3 p-4 p-lg-5 border text-light bg-dark">
+                            <h3>Ceny</h3>
+                            <i class="bi bi-currency-dollar aboutus-icon"></i>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iste!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-5">
+                <p class="display-3 text-uppercase orange-color text-center mb-4">Czym się wyróżniamy</p>
+                <div class="accordion py-5" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Najlepsza jakość produktów
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat unde sint temporibus
+                                dolor
+                                quia ex fuga magni a officiis recusandae! Impedit veritatis velit maiores, distinctio
+                                rem minima
+                                repellendus ea soluta. Dolore harum facilis nam veritatis doloremque vero nihil est
+                                perspiciatis, cum
+                                vel, ducimus,
+                                iure doloribus. Dolore nihil facilis fugiat nesciunt vel inventore voluptas, consequatur
+                                quas,
+                                quia aperiam perferendis consequuntur ad?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Świetne relacje z klientami
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat unde sint temporibus
+                                dolor quia ex
+                                fuga magni a officiis recusandae! Impedit veritatis velit maiores, distinctio rem minima
+                                repellendus ea
+                                soluta.
+                                Dolore harum facilis nam veritatis doloremque vero nihil est perspiciatis, cum vel,
+                                ducimus, iure
+                                doloribus. Dolore nihil facilis fugiat nesciunt vel inventore voluptas, consequatur
+                                quas, quia aperiam
+                                perferendis consequuntur ad?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Zdobywcy wielu nagród
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat unde sint temporibus
+                                dolor quia ex
+                                fuga magni
+                                a officiis recusandae! Impedit veritatis velit maiores, distinctio rem minima
+                                repellendus ea soluta.
+                                Dolore harum facilis nam veritatis doloremque vero nihil est perspiciatis, cum vel,
+                                ducimus, iure
+                                doloribus.
+                                Dolore nihil facilis fugiat nesciunt vel inventore voluptas, consequatur quas, quia
+                                aperiam perferendis
+                                consequuntur ad?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team py-5">
+            <div class="container py-5 text-center">
+                <p class="display-3 text-uppercase orange-color mb-0">Zespół</p>
+                <p class="py-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint vero culpa nam,
+                    maxime mollitia deserunt eveniet nihil enim officia obcaecati ipsa nesciunt accusamus debitis sequi
+                    maiores, iusto rerum vel facilis. Minus accusantium ducimus suscipit accusamus aliquam eius.
+                    Impedit ullam optio temporibus, illo in quos nisi error voluptatum consequuntur sunt suscipit
+                    deleniti
+                    incidunt eos, ex, nobis vero quidem ducimus at iusto?</p>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/hunger-413685_1280.jpeg" class="card-img-top" alt="prezes">
+                            <div class="card-body">
+                                <h5 class="card-title">Prezes</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/woman-1274361_1280.jpeg" class="card-img-top" alt="HR">
+                            <div class="card-body">
+                                <h5 class="card-title">HR</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/fashion-3080644_1280.jpeg" class="card-img-top" alt="marketing">
+                            <div class="card-body">
+                                <h5 class="card-title">Marketing</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="./img/man-1867175_1280.jpeg" class="card-img-top" alt="grafik">
+                            <div class="card-body">
+                                <h5 class="card-title">Fotograf</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--lightbox gallery -->
+
+
+        <section id="gallery-wedding" class="gallery">
+            <div class="container text-center mb-4">
+                <p class="display-3 text-uppercase orange-color mb-5 mt-5">Fotografia ślubna</p>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="wedding" class="col-sm-4" href="
+                        img/wedding-gallery/wedding-1.jpg">
+                        <img src="img/wedding-gallery/wedding-1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="wedding" class="col-sm-4"
+                        href="img/wedding-gallery/wedding-2.jpg">
+                        <img src="img/wedding-gallery/wedding-2-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="wedding" class="col-sm-4"
+                        href="img/wedding-gallery/wedding-3.jpg">
+                        <img src="img/wedding-gallery/wedding-3-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="wedding" class="col-sm-4"
+                        href="img/wedding-gallery/wedding-4.jpg">
+                        <img src="img/wedding-gallery/wedding-4-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="wedding" class="col-sm-4"
+                        href="img/wedding-gallery/wedding-5.jpg">
+                        <img src="img/wedding-gallery/wedding-5-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="wedding" class="col-sm-4"
+                        href="img/wedding-gallery/wedding-6.jpg">
+                        <img src="img/wedding-gallery/wedding-6-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gallery-portrait" class="gallery">
+            <div class="container text-center mb-4">
+                <p class="display-3 text-uppercase orange-color mb-5 mt-5">Portrety</p>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="portrait" class="col-sm-4" href="
+                        img/portraits-gallery/portrait-1.jpg">
+                        <img src="img/portraits-gallery/portrait-1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="portrait" class="col-sm-4"
+                        href="img/portraits-gallery/portrait-2.jpg">
+                        <img src="img/portraits-gallery/portrait-2-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="portrait" class="col-sm-4"
+                        href="img/portraits-gallery/portrait-3.jpg">
+                        <img src="img/portraits-gallery/portrait-3-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="portrait" class="col-sm-4"
+                        href="img/portraits-gallery/portrait-4.jpg">
+                        <img src="img/portraits-gallery/portrait-4-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="portrait" class="col-sm-4"
+                        href="img/portraits-gallery/portrait-5.jpg">
+                        <img src="img/portraits-gallery/portrait-5-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="portrait" class="col-sm-4"
+                        href="img/portraits-gallery/portrait-6.jpg">
+                        <img src="img/portraits-gallery/portrait-6-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gallery-withChild" class="gallery">
+            <div class="container text-center mb-4">
+                <p class="display-3 text-uppercase orange-color mb-5 mt-5">Z dzieckiem</p>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="withChild" class="col-sm-4" href="
+                        img/withChild-gallery/withChild-1.jpg">
+                        <img src="img/withChild-gallery/withChild-1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="withChild" class="col-sm-4"
+                        href="img/withChild-gallery/withChild-2.jpg">
+                        <img src="img/withChild-gallery/withChild-2-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="withChild" class="col-sm-4"
+                        href="img/withChild-gallery/withChild-3.jpg">
+                        <img src="img/withChild-gallery/withChild-3-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="withChild" class="col-sm-4"
+                        href="img/withChild-gallery/withChild-4.jpg">
+                        <img src="img/withChild-gallery/withChild-4-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="withChild" class="col-sm-4"
+                        href="img/withChild-gallery/withChild-5.jpg">
+                        <img src="img/withChild-gallery/withChild-5-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="withChild" class="col-sm-4"
+                        href="img/withChild-gallery/withChild-6.jpg">
+                        <img src="img/withChild-gallery/withChild-6-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="gallery-moto" class="gallery">
+            <div class="container text-center mb-4">
+                <p class="display-3 text-uppercase orange-color mb-5 mt-5">Motoryzacja</p>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="moto" class="col-sm-4" href="
+                        img/moto-gallery/moto-1.jpg">
+                        <img src="img/moto-gallery/moto-1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="moto" class="col-sm-4" href="img/moto-gallery/moto-2.jpg">
+                        <img src="img/moto-gallery/moto-2-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="moto" class="col-sm-4" href="img/moto-gallery/moto-3.jpg">
+                        <img src="img/moto-gallery/moto-3-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="moto" class="col-sm-4" href="img/moto-gallery/moto-4.jpg">
+                        <img src="img/moto-gallery/moto-4-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="moto" class="col-sm-4" href="img/moto-gallery/moto-5.jpg">
+                        <img src="img/moto-gallery/moto-5-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="moto" class="col-sm-4" href="img/moto-gallery/moto-6.jpg">
+                        <img src="img/moto-gallery/moto-6-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+        </section>
+
+        <section id="gallery-christmas" class="gallery">
+            <div class="container text-center mb-4">
+                <p class="display-3 text-uppercase orange-color mb-5 mt-5">Święta</p>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="christmas" class="col-sm-4" href="
+                        img/christmas-gallery/christmas-1.jpg">
+                        <img src="img/christmas-gallery/christmas-1-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="christmas" class="col-sm-4"
+                        href="img/christmas-gallery/christmas-2.jpg">
+                        <img src="img/christmas-gallery/christmas-2-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="christmas" class="col-sm-4"
+                        href="img/christmas-gallery/christmas-3.jpg">
+                        <img src="img/christmas-gallery/christmas-3-thumb.jpg" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row mb-4">
+                    <a data-toogle="lightbox" data-lightbox="christmas" class="col-sm-4"
+                        href="img/christmas-gallery/christmas-4.jpg">
+                        <img src="img/christmas-gallery/christmas-4-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="christmas" class="col-sm-4"
+                        href="img/christmas-gallery/christmas-5.jpg">
+                        <img src="img/christmas-gallery/christmas-5-thumb.jpg" class="img-fluid">
+                    </a>
+                    <a data-toogle="lightbox" data-lightbox="christmas" class="col-sm-4"
+                        href="img/christmas-gallery/christmas-6.jpg">
+                        <img src="img/christmas-gallery/christmas-6-thumb.jpg" class="img-fluid">
+                    </a>
+
+                </div>
+        </section>
+
+        <!--end gallery-->
+
+        <section id="contact" class="contact bg-dark text-light py-5">
+            <div class="container text-center py-5">
+                <p class="display-3 pb-lg-5 text-uppercase">Napisz do nas!</p>
+
+                <div class="row">
+                    <div class="col-lg-9 my-5 m-lg-0">
+
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Imie i nazwisko">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Adres e-mail">
+                            </div>
+                            <div class="input-group mb-3">
+                                <textarea rows="6" class="form-control" placeholder="Treść wiadomości">
+                </textarea>
+                            </div>
+                            <input type="submit" value="Wyślij" class="btn btn-light px-4 py-2 submit-btn">
+                        </form>
+
+                    </div>
+                    <div class="col-lg-3 mt-4 m-lg-0 contact-info">
+                        <h3>Adres:</h3>
+                        <p class="orange-color">PhotoLife.pl</p>
+                        <p><i class="bi bi-geo-alt orange-color"></i>ul. Kwiatowa 1 <br>00-000 Bydgoszcz</p>
+                        <p><i class="bi bi-phone orange-color"></i>11-111-11-11</p>
+                        <p><i class="bi bi-at orange-color"></i>studio@lifephoto.pl</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-light border-top">
+        <p class="py-2 text-center m-2">&copy; 2023 PhotoLife</p>
+        <p class="py-2 text-center m-2">Designed by gajewskiandrzej@hotmail.com</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/lightbox/lightbox-plus-jquery.js"></script>
+    <script src="/js/lightbox/lightbox.js"></script>
+</body>
+
+</html>
